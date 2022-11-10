@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<style>
+
+    
+    .details {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+
+    .name-details {
+        margin-left: 20%;
+        display: grid;
+    }
+
+    .ac-details {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ac-details .number-details {
+        font-size:larger;
+        margin-right: 1rem;
+        height: fit-content;
+    }
+
+    .display-picture {
+        border-radius: 60%;
+        border: 1px gray solid;
+    }
+
+    .ac-details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .posts-image-body {
+        display: flex;
+        max-width: 50%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .post-image {
+        margin-top: 4%;
+        margin-bottom: 4%;
+        cursor: pointer;
+    }
+
+    hr {
+        max-width: 50%;
+        opacity: 0.4;
+    }
+
+</style>
+
+<body>
+    <div class="post-body">
+        <div class="car home-card">
+            <h2 class="post-user">Pritom</h2>
+            <div class="card-image">
+                <img src="https://picsum.photos/400/400" alt="Example pic" className="post-image" id="post-1" />
+            </div>
+            <i class="material-icons like-btn" style="color: red;">favorite</i>
+            <div class="card-content">
+                <h3>Title</h3>
+                <p>post caption</p>
+                <input type="text" placeholder="comment"/>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

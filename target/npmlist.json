@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"newtextogram","dependencies":{"bcryptjs":{"version":"2.4.3"},"cors":{"version":"2.8.5"},"express":{"version":"4.18.2"},"jsonwebtoken":{"version":"8.5.1"},"mongoose":{"version":"6.6.7"}}}

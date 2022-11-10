@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+* {
+  color: black
+}
+
+/* Nav bar style */
+
+.nav-bar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+  height: fit-content !important;
+  z-index: 100;
+}
+
+.nav-wrapper {
+  z-index: 100;
+}
+
+#log-out {
+  margin-right: 2rem;
+}
+
+a {
+  color: black !important;
+}
+
+.brand-logo {
+  font-family: 'Grand Hotel', cursive;
+  margin-left: 44%; 
+  font-size:6rem;
+
+}
+
+.logo {
+  font-family: 'Grand Hotel', cursive;
+  margin-left: 44%; 
+  font-size: 2rem;
+  text-decoration: none !important;
+  margin: auto;
+  color: white;
+}
+
+.whole-card {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-card {
+  width:40% !important;
+  padding: 4% !important;
+  max-height: max-content !important;
+  text-align: center !important;
+}
+
+.auth-btn {
+  background-color: chocolate !important;
+  margin: 4% 0% !important;
+  width: 30% !important;
+  margin: 1rem auto !important;
+}
+
+.auth-btn:active {
+  opacity: 0.2 !important;
+}
+
+/* Profile page design */
+
+.profile-body {
+  background-color: transparent !important;
+}
+
+
+.profile-body .card {
+  margin: 0% !important;
+  padding-top: 2% !important;
+  background-color: transparent !important;
+
+}
+
+.update-pic-btn {
+  width: max-content;
+
+}
+
+
+.details {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 4%;
+}
+
+.name-details {
+  margin-left: 20%;
+  display: grid;
+  align-items: center;
+}
+
+.name-details .h1 {
+  font-size: 2rem;
+  line-height: 0%;
+  margin: 0rem 0rem 0;
+}
+
+.ac-details {
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+}
+
+.ac-details .number-details {
+  font-size:larger;
+  margin-right: 1rem;
+  height: fit-content;
+}
+
+.display-picture {
+  border-radius: 60%;
+  border: 1px gray solid;
+  cursor: pointer;
+  max-width: 20%;
+  max-height: 20%;
+  width: 20%;
+  height: 20%;
+  background-color: white;
+}
+
+.ac-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts-image-body {
+  display: flex;
+  max-width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.posts-image-body .post-image {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  cursor: pointer;
+  width: 15rem;
+  height: 15rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+hr {
+  max-width: 50%;
+  opacity: 0.4;
+}
+
+
+/* Home page post style */
+
+
+
+.post-body {
+  margin-top: 2rem;
+  z-index: 90;
+}
+
+
+.home-card{
+  max-width: 500px;
+  height: max-content;
+  margin: 26px auto;
+  padding: 1rem;
+}
+
+.post-btns {
+  margin-top: 1rem;
+}
+
+.like-btn {
+  color: red;
+}
+
+.thumb {
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.mtoast {
+  color: black
+}
+
+.post-title {
+  font-size:larger;
+}
+
+.post-desc {
+  font-size: medium;
+  opacity: 0.9;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.comment-body {
+  margin-top: 1rem;
+}
+
+.comment-body .comment-user {
+  font-weight:400;
+  font-size: larger;
+}
+
+.comment-body .comment-text {
+  margin-left: 1rem;
+  
+}
+
+/* User profile css */
+
+.login-btn {
+  background-color: chocolate !important;
+  margin: 4% 0% !important;
+  width: fit-content !important;
+  margin: 1rem auto !important;
+
+}
