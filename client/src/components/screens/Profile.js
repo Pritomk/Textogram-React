@@ -11,7 +11,7 @@ const Profile = () => {
 
     useEffect(() => {
 
-        fetch("/post/myposts", {
+        fetch("/myposts", {
             headers: {
                 "Authorization": localStorage.getItem("auth_token")
             }
@@ -34,7 +34,7 @@ const Profile = () => {
         })
             .then(res => res.json())
             .then(data => {
-                fetch("http://localhost:5000/profile/updatepic", {
+                fetch("/updatepic", {
                     method:"put",
                     headers: {
                         "Content-Type": "application/json",

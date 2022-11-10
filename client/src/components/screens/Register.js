@@ -21,7 +21,7 @@ const Register = () => {
             return M.toast({ html: `Invalid email`, classes: 'rounded #ef5350 red lighten-1' });
 
         }
-        fetch("/auth/register", {
+        fetch("/register", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"

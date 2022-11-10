@@ -15,7 +15,7 @@ const Login = () => {
             return M.toast({ html: `Invalid email`, classes: 'rounded #ef5350 red lighten-1' });
 
         }
-        fetch("/auth/login", {
+        fetch("/login", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"

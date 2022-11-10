@@ -9,7 +9,7 @@ const SubscribedPost = () => {
     const [data, setData] = useState([]);
     
     useEffect(() => {
-        fetch("/post/getsubposts", {
+        fetch("/getsubposts", {
             headers: {
                 "Authorization": localStorage.getItem("auth_token")
             }
@@ -23,7 +23,7 @@ const SubscribedPost = () => {
 
     const likePost = (id) => {
         console.log(id);
-        fetch("/post/like", {
+        fetch("/like", {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const SubscribedPost = () => {
             }).catch(err => console.log(err))
     }
     const unLikePost = (id) => {
-        fetch("/post/unlike", {
+        fetch("/unlike", {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const SubscribedPost = () => {
     }
 
     const makeComment = (text, postId) => {
-        fetch("/post/comment", {
+        fetch("/comment", {
             method: "put",
             headers: {
                 "Authorization": localStorage.getItem("auth_token"),
@@ -96,7 +96,7 @@ const SubscribedPost = () => {
     }
 
     const deletePost = (postId) => {
-        fetch(`/post/delete/${postId}`, {
+        fetch(`/delete/${postId}`, {
             method:"delete",
             headers: {
                 "Authorization": localStorage.getItem("auth_token")

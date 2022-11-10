@@ -9,7 +9,7 @@ const Home = () => {
     const [data, setData] = useState([]);
     
     useEffect(() => {
-        fetch("/post/allposts", {
+        fetch("/allposts", {
             headers: {
                 "Authorization": localStorage.getItem("auth_token")
             }
@@ -23,7 +23,7 @@ const Home = () => {
 
     const likePost = (id) => {
         console.log(id);
-        fetch("/post/like", {
+        fetch("/like", {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const Home = () => {
             }).catch(err => console.log(err))
     }
     const unLikePost = (id) => {
-        fetch("/post/unlike", {
+        fetch("/unlike", {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const Home = () => {
     }
 
     const makeComment = (text, postId) => {
-        fetch("/post/comment", {
+        fetch("/comment", {
             method: "put",
             headers: {
                 "Authorization": localStorage.getItem("auth_token"),
@@ -96,7 +96,7 @@ const Home = () => {
     }
 
     const deletePost = (postId) => {
-        fetch(`/post/delete/${postId}`, {
+        fetch(`/delete/${postId}`, {
             method:"delete",
             headers: {
                 "Authorization": localStorage.getItem("auth_token")
