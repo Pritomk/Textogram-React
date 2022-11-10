@@ -15,7 +15,7 @@ const CreatePost = () => {
             let token = localStorage.getItem("auth_token");
 
             console.log(token);    
-            fetch("http://localhost:5000/post/createpost", {
+            fetch("/post/createpost", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json",

@@ -11,7 +11,7 @@ const Profile = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/post/myposts", {
+        fetch("/post/myposts", {
             headers: {
                 "Authorization": localStorage.getItem("auth_token")
             }

@@ -15,7 +15,7 @@ const UserProfile = () => {
 
         console.log(userId);
 
-        fetch(`http://localhost:5000/profile/${userId}`, {
+        fetch(`/profile/${userId}`, {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": localStorage.getItem("auth_token")
@@ -31,7 +31,7 @@ const UserProfile = () => {
 
     const followUser = () => {
         
-        fetch(`http://localhost:5000/profile/follow`, {
+        fetch(`/profile/follow`, {
             method: "put",
             headers: {
                 "Authorization": localStorage.getItem("auth_token"),
@@ -63,7 +63,7 @@ const UserProfile = () => {
     }
 
     const unFollowUser = () => {
-        fetch(`http://localhost:5000/profile/unfollow`, {
+        fetch(`/profile/unfollow`, {
             method: "put",
             headers: {
                 "Authorization": localStorage.getItem("auth_token"),
