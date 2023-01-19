@@ -4,6 +4,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const requirelogin = require('../middleware/requirelogin');
 const Post = mongoose.model("Post");
+const User = mongoose.model("User");
 
 
 //Create a new post
@@ -22,6 +23,23 @@ router.post('/createpost', requirelogin, (req,res)=>{
         res.status(200).json({
             result: result
         });
+        // User.find({_id: {$in:req.user.followers}})
+        // .then(users=>{
+        //     res.status(200).json({
+        //         msg:"followers",
+        //         users:users,
+        //         result:result
+        //     });
+        //     users.map(item=>{
+        //         User.findByIdAndUpdate(item._id,{
+        //             $push: {notification:`${req.user.name} created a post`}
+        //         },{
+        //             new:true
+        //         }).exec((err,result)=>{
+        //             console.log(result);
+        //         })
+        //     })
+        // }).catch(err=>console.log(err))
     }).catch(err => {
         res.status(400).json({
             error: err

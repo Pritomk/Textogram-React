@@ -19,7 +19,8 @@ const userSchema = new mongoose.Schema({
         default: "https://res.cloudinary.com/do87gdwir/image/upload/v1668104857/icons8-avatar-64_igjgsy.png"
     },
     followers: [{type:ObjectId, ref: "User"}],
-    following: [{type:ObjectId, ref: "User"}]
+    following: [{type:ObjectId, ref: "User"}],
+    notification:[{text:String}]
 });
 
 mongoose.model("User", userSchema);

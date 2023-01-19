@@ -34,6 +34,7 @@ const CreatePost = () => {
                         M.toast({ html: `${data.error}`, classes: 'rounded #ef5350 red lighten-1' });
                         console.log(data);
                     } else {
+                        console.log(data);
                         M.toast({ html: `Successfully created post`, classes: 'rounded #76ff03 light-green accent-3 mtoast' });
                         navigate('/');
                     }

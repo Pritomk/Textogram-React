@@ -47,10 +47,10 @@ if (process.env.NODE_ENV=="production") {
 }
 
 
-app.use(require('./routes/auth'));
-app.use(require('./routes/post'));
-app.use(require('./routes/user'));
+app.use('/auth',require('./routes/auth'));
+app.use('/post',require('./routes/post'));
+app.use('/user',require('./routes/user'));
 
 app.listen(PORT,() => {
-    console.log(`Server is running on Port no http://localhost:${PORT}`);
+    console.log(`Server is running on Port http://localhost:${PORT}`);
 });

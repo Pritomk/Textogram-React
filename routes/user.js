@@ -6,7 +6,7 @@ const requirelogin = require('../middleware/requirelogin');
 const User = mongoose.model("User");
 const Post = mongoose.model("Post");
 
-router.get("user/:id", requirelogin, (req, res) => {
+router.get("/user/:id", requirelogin, (req, res) => {
     User.findOne({ _id: req.params.id })
         .select("-password")
         .then(user => {
